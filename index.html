@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <h1>TODO</h1>
+
+            <!-- Theme Button -->
+            <button id="theme-btn">
+                <img src="images/icon-sun.svg" id="theme-icon" alt="theme">
+            </button>
+
+        </header>
+
+        <div class="todo-input">
+
+            <div class="circle"></div>
+
+            <input
+                type="text"
+                id="todo-input"
+                placeholder="Create a new todo...">
+
+        </div>
+
+        <div class="todo-container">
+
+            <ul id="todo-list">
+
+                <li class="todo-item">
+
+                    <div class="left">
+
+                        <button class="check-btn"></button>
+
+                        <span>Complete online JavaScript course</span>
+
+                    </div>
+
+                    <button class="delete-btn">
+                        <img src="images/icon-cross.svg" alt="">
+                    </button>
+
+                </li>
+
+                <li class="todo-item">
+
+                    <div class="left">
+
+                        <button class="check-btn"></button>
+
+                        <span>Jog around the park</span>
+
+                    </div>
+
+                    <button class="delete-btn">
+                        <img src="images/icon-cross.svg" alt="">
+                    </button>
+
+                </li>
+
+                <li class="todo-item">
+
+                    <div class="left">
+
+                        <button class="check-btn"></button>
+
+                        <span>10 minutes meditation</span>
+
+                    </div>
+
+                    <button class="delete-btn">
+                        <img src="images/icon-cross.svg" alt="">
+                    </button>
+
+                </li>
+
+            </ul>
+
+            <!-- Footer -->
+
+            <div class="todo-footer">
+
+                <p>
+                    <span id="items-left">3</span> items left
+                </p>
+
+                <div class="filters">
+
+                    <button class="filter active">
+                        All
+                    </button>
+
+                    <button class="filter ">
+                        Active
+                    </button>
+
+                    <button class="filter">
+                        Completed
+                    </button>
+
+                </div>
+
+                <button id="clear-completed">
+                    Clear Completed
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Filters -->
+
+        <div class="mobile-filters">
+
+            <button class="filter active">
+                All
+            </button>
+
+            <button class="filter">
+                Active
+            </button>
+
+            <button class="filter">
+                Completed
+            </button>
+
+        </div>
+
+        <!-- Drag Text -->
+
+        <p class="drag-text">
+            Drag and drop to reorder list
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
